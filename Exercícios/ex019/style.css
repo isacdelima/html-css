@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, #caf2f0, #9fece8);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+#tituloprincipal{
+    background-color: #74D94C;
+    color: white;
+    text-align: center;
+}
+
+.tecnologia{
+    text-align: right;
+    color: #268146;
+}
+
+.nivelbasico{
+    color: #298d38;
+    font-weight: bold;
+}
+
+.nivelintermediario{
+    color: #8d8a29;
+}
+
+.nivelavançado{
+    color: #8d3d29;
+
+}
+
+p{text-align: justify;}

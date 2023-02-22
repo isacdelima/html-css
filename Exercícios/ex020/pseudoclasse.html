@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        body{
+            font:1.2em arial,sans-serif;
+        }
+
+        #observacaofinal{
+            color: red;
+            font:800 1.2em cursive;
+            
+        }
+
+        a:hover{
+           color:red
+        }
+
+        a:visited{
+            color: rgb(120, 35, 35);
+        }
+        #passamouse:hover{
+            color: blue;
+        }
+
+        #textorevela>a{display:none;
+        }
+
+        #textorevela:hover > a{
+            display: block;
+            background-color: crimson;
+            color:wheat;
+        }
+
+    </style>
+</head>
+<body>
+    <p><a href="https://www.youtube.com" target="_blank" >Youtube</a></p>
+    <p><a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+    <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+    <p id="passamouse">Passe o mouse aqui (Fica azul)</p>
+    <div id="textorevela">Passe o mouse aqui (Revela texto) <a href="hover.html"> Surpresa! </a> </div>
+    <p id="observacaofinal">Sites já visitados ficam com a cor vinho e os não visitado azul</p>
+</body>
+</html>

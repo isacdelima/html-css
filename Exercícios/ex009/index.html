@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+<h1>Ordered Lists</h1>   
+    <p>As listas ordenadas, são listas onde a ordem importa, como em rankings por exemplo. <br> Se utiliza o tag &lt;ol&gt; (Ordered list)</p>
+<ol>
+    <h2>Melhores jogos</h1>
+        <li>Gta V</li>
+        <li>Fifa 23</li>
+        <li>Calll of duty</li>
+        <li>8 Ball pool</li>
+        <li>Counter strike</li>
+</ol>
+<h1>Unordered Lists</h1>
+<p>Já nas listas não ordenadas, a ordem é irrelevante como numa lista de compras</p>
+<ul>
+    <h2>Lista de compras</h2>
+        <li>Macarrão</li>
+        <li>Maionese</li>
+        <li>Arroz</li>
+        <li>Biscoito</li>   
+</ul>
+<h1>Definition Lists</h1>
+<p>Possuem um termo e sua definição</p>
+<dl>
+   <dt>HTML</dt>     <!--Definition Term-->
+   <dd>Linguagem de marcação para conteúdo do site.</dd>   <!--Definition Description-->
+   <dt>CSS</dt>
+   <dd>Linguagem de marcação para Design do site.</dd>
+   <dt>JavaScript</dt>
+   <dd>Linguagem de programação para interatividade do site.</dd>
+</dl>  
+<h2>Parâmetros das listas</h2>
+<ul>
+    <h3>Em listas ordenadas</h3>
+        <li>1 - Lista em ordem numérica</li>
+        <li>A - Lista em ordem alfabética maiúscula</li>
+        <li>a - Lista em ordem alfabética minúscula</li>
+        <li>I - Lista em algarismos romanos maiúsuclos</li>
+        <li>i - Lista em algarismos romanos minúsuclos</li>
+</ul>
+<p>Em listas ordenadas o parâmetro padrão é o 1, mas além do paramêtro 'type' existe o parâmetro 'Start' que define em que 'número' começa a contagem da lista. <strong>Lembrando que o Start também se aplica nos outros tipos de ordenaçao,</strong> Por exemplo:</p>
+<pre>
+    <code>&lt;ol type="A"start ='5' &gt;
+        &lt;h2>Melhores jogos&lt;/h1&gt;
+        &lt;li>Gta V&lt;/li&gt;
+        &lt;li>8 Ball Pool&lt;/li&gt;
+        &lt;li>Call of duty&lt;/li&gt;
+        &lt;/ol&gt;</code>
+<strong>Resultado esperado:
+   E. Fifa 23
+   F. Gta V
+   G. 8 Ball Pool
+   H. Call of duty</strong>
+</pre>
+<h2>Em listas não ordenadas</h2>
+    <p>Em listas não ordenadas o padrão é o 'Disc'(Circulo preenchido), mas também há o 'circle' (Círculo com borda porèm sem preencimento) e o 'Square' (Quadrado preenchido)</p>
+<h1>Listas mistas</h1> 
+    <p>É muito comum mesclar listas como no exemplo abaixo:</p>
+<ol type="I">
+    <h2>Melhores times</h2>
+    <li>Brasil</li>
+        <ol>
+            <li>Palmeiras</li>
+            <li>Flamengo</li>
+            <li>Atlético Mineiro</li>
+            <li>Grêmio</li>
+        </ol>
+    <li>Inglaterra</li>
+        <ol>
+            <li>Arsenal</li>
+            <li>Manchester City</li>
+            <li>NewCastle United</li>
+            <li>Chelsea</li>
+        </ol>
+    <li>Espanha</li>
+            <ol>
+                <li>Barcelona</li>
+                <li>Real Madrid</li>
+                <li>Atlético de Madrid</li>
+                <li>Valencia</li>
+            </ol>
+</ol>
+</body>
+</html>

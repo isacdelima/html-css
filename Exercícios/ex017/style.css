@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Dimensões de texto recomendadas:display: 'px' e 'em', principalmente o em.;
+    o padrão de um site é 16px, e 1em equivale á 16 px, logo 2 em=32px 1,5=24px. e assim por diante*/
+}
