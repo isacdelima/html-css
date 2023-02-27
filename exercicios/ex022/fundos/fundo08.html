@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centralização vertical 02</title>
     <style>
-        #container{
-            height: 97vh;
+
+        *{
+            margin: 0px;
+            padding: 0px;
         }
+
+        section#container{
+            height: 100vh;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-image: url(../imagens/target001.png);
+            background-color: crimson;
+        }
+
+        article#content{
+            position: absolute;
+            background-color: chocolate;
+            height: 400px;
+            max-width: 500px;
+
+            top: 50%;
+            left: 50%;
+        }
+
     </style>
 </head>
 <body>
