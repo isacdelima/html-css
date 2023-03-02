@@ -13,11 +13,85 @@
         }
 
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: cursive;
         }
 
         table{
-            border: 5px solid black;
+            border-radius: 2px;
+            border-collapse: collapse;
+            width: 400px;
+            margin: auto;
+            margin-bottom:20px;   
+            box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.363);
+     
+        }
+
+        td{
+            padding: 25px;
+            border: 3px solid black;
+            font-weight: bold;
+        }
+
+        .sudeste{
+            background-color: gray;
+        }
+
+        .centro-oeste{
+            background-color: yellow;
+        }
+
+        .nordeste{
+            background-color: orange;
+        }
+        
+        #moro{
+            color: blueviolet;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .visitei{
+            color: blue;
+        }
+
+        ul{
+            width: fit-content;
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        li{
+            list-style: square;
+        }
+
+        ul li#res-atual{
+            color: blueviolet;
+            font-weight:bold;
+        }
+
+        ul li#local-visitado{
+            color: blue;
+            font-weight:bold;
+        }
+
+        div.legendas{
+            background-color: rgba(46, 158, 61, 0.649);
+            width: 300px;
+            border-radius: 4px;
+            margin: auto;
+            border: 2px solid rgba(0, 0, 0, 0.576);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.299);
+        }
+
+        div strong{
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -31,50 +105,63 @@
                     Table Data - Dado da tabela
         -->
         <tr>
-            <td>
-            A1
+            <td class="sudeste" id="moro">
+            São Paulo
             </td>
-            <td>
-            B1
+            <td class="centro-oeste">
+            Mato-Grosso
             </td>
-            <td>
-            C1
-            </td>
-        </tr>
-        <tr>
-            <td>
-            A2
-            </td>
-            <td>
-            B2   
-            </td>
-            <td>
-            C2
+            <td class="nordeste visitei">
+            Pernambuco
             </td>
         </tr>
         <tr>
-            <td>
-            A3
+            <td class="sudeste visitei">
+            Minas-Gerais
             </td>
-            <td>
-            B3
+            <td class="centro-oeste">
+            Mato-grosso do sul   
             </td>
-            <td>
-            C3
+            <td class="nordeste">
+            Bahia
             </td>
         </tr>
         <tr>
-            <td>
-            A4
+            <td class="sudeste visitei">
+            Rio de Janeiro
             </td>
-            <td>
-            B4
+            <td class="centro-oeste">
+            Goiás
             </td>
-            <td>
-            C4
+            <td class="nordeste">
+            Piauí
+            </td>
+        </tr>
+        <tr>
+            <td class="sudeste">
+            Espírito Santo
+            </td>
+            <td class="centro-oeste">
+            Distrito Federal
+            </td>
+            <td class="nordeste">
+            Maranhão
             </td>
         </tr>
     </table>
+    <div class="legendas">
+        <ul> <strong>Legenda</strong>
+        <li id="res-atual">Residência atual</li>
+        <li id="local-visitado">Local visitado</li>
+        </ul>
+    </div>
+    <div class="legendas">
+        <ul><strong>Regiões</strong>
+            <li class="sudeste">Sudeste</li>
+            <li class="centro-oeste">Centro-Oeste</li>
+            <li class="nordeste">Nordeste</li>
+        </ul>
+    </div>
 </body>
 </html>
 
