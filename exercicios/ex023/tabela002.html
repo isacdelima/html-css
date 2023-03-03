@@ -26,6 +26,9 @@
             color: white;
         }
 
+        th#populacao{
+            width: 100px;
+        }
         td.num{
             text-align: right;
         }
@@ -36,12 +39,12 @@
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    <h1 id="titulo-tabela">Uso de tabelas grandes</h1>
      <table>
         <thead>
             <tr>
-                <th>UF</th>
-                <th>População</th>
+                <th scope="col">UF</th>
+                <th id="populacao" scope="col">População</th>
             </tr>
         </thead>
         <tbody>
