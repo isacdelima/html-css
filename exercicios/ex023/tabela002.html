@@ -16,6 +16,13 @@
             width: 500px;
         }
 
+        caption{
+            padding: 10px;
+            font-weight: bold;
+            background-color: grey;
+            color: wheat;
+        }
+
         td,th{
             border: 1px solid black;
             padding: 10px;
@@ -41,7 +48,7 @@
 <body>
     <h1 id="titulo-tabela">Uso de tabelas grandes</h1>
      <table>
-        <caption></caption>
+        <caption>População das Unidades Fedrativas do Brasil</caption>
         <thead>
             <tr>
                 <th scope="col">UF</th>
@@ -158,7 +165,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>População Total</th>
+                <th scope="row">População Total</th>
                 <td class="num"><strong>207.750.291</strong></td>
             </tr>
         </tfoot>
