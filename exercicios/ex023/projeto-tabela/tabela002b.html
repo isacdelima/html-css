@@ -13,8 +13,8 @@
 
         img{
                 display: inline-block;
-                padding: 10px;
-                margin-bottom: -70px;
+                padding-left: 100px;
+                margin: -100px 150px;
         }
 
         header > h1,h2{
@@ -40,12 +40,6 @@
                 margin-bottom: 10px;
         }
 
-        main h2{
-                display: inline-block;
-                margin: auto;
-                text-align: center;
-        }
-
         main p {
                 color: rgb(9, 101, 78);
                 font-size: 1.1em;
@@ -55,25 +49,28 @@
         }
 
         table{
-                display: inline-table;
                 margin: 15px auto 15px auto;
                 width: 600px;
                 padding: 10px;
                 border-collapse: collapse;
         }
 
+        thead th{
+                color:rgb(6, 138, 80);
+                font-weight: bold;
+        }
         table th{
                 padding: 10px;
         }
 
-        td,th{
-                border: 1px solid black;
+        td{
+                border-bottom: 1px solid black;
+                padding: 3px;
         }
 
         tbody th{
                 background-color:rgb(6, 184, 107);
                 color: white;
-                font-size: 0.7em;
         }
     </style>
 </head>
@@ -86,9 +83,13 @@
     <main>
         <h1>ATLETAS CONVOCADOS</h1>
         <p>Convocação: 03.03.2023 | Apresentação: 20.03.2023</p>
-        <h2>APELIDO</h2>
-        <h2>CLUBE</h2>
-                <table>
+        <table>
+                <thead>
+                        <tr>
+                            <th>APELIDO</th>
+                            <th>CLUBE</th>       
+                        </tr>
+                </thead>
                 <tbody>
                         <tr>
                            <th>GOLEIROS</th>
