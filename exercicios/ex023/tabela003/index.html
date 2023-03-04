@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 10px;
+            width: 400px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+           <td colspan="2">A</td>
+           <td>C</td> 
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td> 
+        </tr>
+        <tr>
+            <td colspan="2">G</td>
+            <td>I</td>    
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>    
+        </tr>
+
+    </table>
 </body>
 </html>
