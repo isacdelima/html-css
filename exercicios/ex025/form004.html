@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        header h1{
+            text-align: center;
+        }
+        fieldset{
+            background-color: whitesmoke;
+            margin: 15px;
+        }
+
+        fieldset h1{
+            font-size: 1.5em;
+        }
+
+        aside{
+            text-align: center;
+            margin: 20px;
+        }
+
+        aside input{
+            background-color: rgba(255, 0, 0, 0.739);
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid rgb(71, 71, 71);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste de formulário</h1>
+    </header>
+    <form method="get" autocomplete="on">
+        <fieldset>
+            <h1>Dados pessoais</h1>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="nome" name="nome" id="inome" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" required pattern="^\d{2}\d{5}\d{4}$" autocomplete="tel">
+            </p>
+        </fieldset>
+        <fieldset>
+            <h1>Dados Financeiros</h1>
+            <p>
+                <label for="irenda">Renda Mensal: </label>
+                <input type="number" name="renda" id="irenda" required step="100">
+            </p>
+            <p>
+                <label for="iempresa">Empresa: </label>
+                <input type="text" name="empresa" id="iempresa" required autocomplete="organization">
+            </p>
+            <p>
+                <label for="icargo">Cargo: </label>
+                <input type="text" name="cargo" id="icargo" required>
+            </p>
+        </fieldset>
+        <aside>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </aside>
+    </form>
+</body>
+</html>
