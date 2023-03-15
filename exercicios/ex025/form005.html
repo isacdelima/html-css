@@ -8,17 +8,21 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <fieldset>
-        <legend>Sexo</legend>
-        <p><input type="radio" name="sex" id="isexmas" checked><label for="isexmas">Masculino</label></p>
-        <p><input type="radio" name="sex" id="isexfem"><label for="isexfem">Feminino</label></p>
-    </fieldset>
-    <fieldset>
-        <legend>Esportes</legend>
-        <p><input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label></p>
-        <p><input type="checkbox" name="esbas" id="iesbas" ><label for="iesbas">Basquete</label></p>
-        <p><input type="checkbox" name="esvol" id="iesvol" ><label for="iesvol">Vôlei</label></p>
-        <p><input type="checkbox" name="esten" id="iesten" ><label for="iesten">Tênis</label></p>
-    </fieldset>
+    <form autocomplete="on" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p><input type="radio" name="sex" id="isexmas" checked value="M"><label for="isexmas">Masculino</label></p>
+            <p><input type="radio" name="sex" id="isexfem" value="F"><label for="isexfem">Feminino</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <p><input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label></p>
+            <p><input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label></p>
+            <p><input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Vôlei</label></p>
+            <p><input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label></p>
+        </fieldset>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
+    </form>
 </body>
 </html>
