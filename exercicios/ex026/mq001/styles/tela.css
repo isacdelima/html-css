@@ -2,3 +2,30 @@
 
 /* Estilo para Telas */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightcyan;
+}
+
+header > h1{
+    background-color: rgba(142, 226, 226, 0.569);
+    text-align: center;
+    font-size: 2.2em;
+}
+
+header menu{
+    background-color: rgb(26, 175, 175);
+    display: inline-block;
+    width: 100vw;
+    padding: 10px;
+}
+
+header menu li{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
