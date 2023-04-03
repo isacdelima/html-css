@@ -2,6 +2,7 @@
 
 /* Estilo para demais dispositivos */
 
+
 @media screen and (min-width:768px) {
     body{
         background-image: url(../imagens/back-tablet.jpg);        
@@ -40,4 +41,14 @@
 
     img#pc{display:none}
     img#tv{display: block;}
+}
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg); 
+        /*Desnecessário, pois o print não carrega nenhum background image!*/
+    }
+
+    img#phone{display: none;}
+    img#print{display: block;}
 }
