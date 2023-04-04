@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<body>
+    <header>
+        <h1>Globo News</h1>
+        <span id="burguer" class="material-icons" onclick="clicarMenu()">menu</span>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Cleber Machado estreia na Record e 'pisa' na Globo no ibope</h1>
+
+            <p>A estreia de Cleber Machado na Record foi literalmente histórica. Sua transmissão de Água Santa 2 x 1 Palmeiras deu ibope de 16,5 pontos e 28,5% de share na Grande São Paulo </p>
+
+            <p>Isso equivale ao ibope de A Fazenda ou, mais raramente, um bom capítulo de novela. Foi o primeiro jogo da final do campeonato Paulista. No mesmo horário (16h às 18h05), a Globo marcou 10,8 pontos com The Masked Singer e Domingão com Huck. Foi a primeira vez que qualquer celebridade saiu da Globo, foi para uma emissora concorrente e venceu a ex-casa. Isso não aconteceu com Jô Soares, Xuxa ou Fausto Silva, por exemplo.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique iure unde molestiae ducimus, eum asperiores? Facere, reprehenderit, earum necessitatibus ipsum distinctio ratione pariatur obcaecati facilis natus, blanditiis asperiores et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vero quas possimus quia odio voluptate doloremque esse est facere officia recusandae minima nulla, quibusdam distinctio id numquam rem ex repudiandae!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod temporibus dolore repellendus enim assumenda cumque magnam! Praesentium optio ipsam eveniet, omnis officiis aliquam assumenda natus ea inventore vel veritatis hic!</p>
+
+        </article>
+    </main>
+
+    <script>
+        function clicarMenu(){
+            if(menu.style.display == 'none'){
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
