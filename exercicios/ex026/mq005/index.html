@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-queries.css">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1>Globo News</h1>
         <span id="burguer" class="material-icons" onclick="clicarMenu()">menu</span>
@@ -39,6 +39,13 @@
     </main>
 
     <script>
+
+        function mudarTamanho(){
+            if (window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }
+        };
+
         function clicarMenu(){
             if(menu.style.display == 'none'){
                 menu.style.display = 'block'

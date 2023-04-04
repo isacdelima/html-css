@@ -48,7 +48,7 @@ header a{
     color: white;
     text-decoration: none;
     padding: 3px;
-    border-radius: 4px;
+    border-radius: 4 px;
 }
 
 header a:hover{   
