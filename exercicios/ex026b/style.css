@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    background-color: burlywood;
+}
+
+main#conteiner{
+    display: flex; /* Com flex, todos os elementos filhos do contêiner seguem suas orientações */ 
+
+    flex-direction: row; /*Define orientação do eixo principal*/
+
+    justify-content: center; /* Alinhar elementos do eixo principal */
+
+    align-items:flex-start; /* Alinhar elementos do eixo perpendicular */
+
+    flex-wrap: wrap; /* Wrap defina se os elementos quebram linha ou não, o padrão é 'no-wrap' (não quebra linha) */
+
+    flex-flow: row wrap; /* Handshort que une Flex-Dircetion com Flex-Wrap*/
+
+    align-content: center; /* Quando existe o flex wrap como Wrap, ele define o alinhamento das quebras de linha */
+    
+    gap: 10px 10px; /* Fixa espaço entre elementos horizontalmente e verticalmente*/
+
+    column-gap: 10px; /*Define gap apenas verticalmente*/
+
+    row-gap: 10px; /*Define gap apenas horizontalmente*/
+
+    height: 500px;
+
+}
+
+#bloco-1{
+    background-color: red;
+    padding: 20px;
+}
+
+#bloco-2{
+    background-color: plum;
+    padding: 20px;
+}
+
+#bloco-3{
+    background-color: darkslategray;
+    padding: 20px;    
+}
