@@ -5,6 +5,7 @@ body{
 }
 
 main#conteiner{
+    height: 500px;
     display: flex; /* Com flex, todos os elementos filhos do contêiner seguem suas orientações */ 
 
     flex-direction: row; /*Define orientação do eixo principal*/
@@ -19,30 +20,42 @@ main#conteiner{
 
     align-content: center; /* Quando existe o flex wrap como Wrap, ele define o alinhamento das quebras de linha */
     
-    gap: 10px 30px; /* Fixa espaço entre elementos horizontalmente e verticalmente*/
+    gap: 10px 50px; /* Fixa espaço entre elementos horizontalmente e verticalmente*/
 
     /* column-gap: 30px; /*Define gap apenas verticalmente*/
 
      /* row-gap: 10px; /*Define gap apenas horizontalmente*/ 
 
-
-
 }
+
 
 .bloco-1{
     background-color: red;
-    order: 1;
-    padding:20px;
+    order: 0;
+   /* flex-grow: 0; - Crescimento do elemento
+   flex-shrink: 1; - Diminuição do elemento
+   flex-basis: 150px; - Tamanho do elemento
+   */ 
+    flex: 0 1 150px;
 }
 
 .bloco-2{
     background-color: plum;
-    order: 1;
-    padding:20px;
+    order: 0;
+    /* flex-grow: 0; - Crescimento do elemento
+    flex-shrink: 1; - Diminuição do elemento
+    flex-basis: 150px; - Tamanho do elemento
+    */ 
+    flex: 0 1 150px; 
+    
 }
 
 .bloco-3{
     background-color: darkslategray;
-    order: -1;
-    padding:20px;
+    order: 0;
+    /* flex-grow: 0; - Crescimento do elemento
+    flex-shrink: 1; - Diminuição do elemento
+    flex-basis: 150px; - Tamanho do elemento
+    */ 
+    flex: 0 1 150px;
 }
